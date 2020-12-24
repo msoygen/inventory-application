@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "14.15.13"
+    "node": "14.15.3"
   },
   "name": "inventory-application",
   "version": "0.0.0",
