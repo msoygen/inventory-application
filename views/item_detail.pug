@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Title: #{item.name}
+  
+  p #[strong Category:] 
+    a(href=item.category.url class="item-url") #{item.category.name}
+  p #[strong Description:] #{item.description}
+  p #[strong Price:] #{item.price} #{'$'}
+  p #[strong Number in Stock:]#{item.number_in_stock} &nbsp;
+    
+  hr
+  p
+    a(href=item.url+'/delete' class="content-url") Delete item
+  p
+    a(href=item.url+'/update' class="content-url") Update item

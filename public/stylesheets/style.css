@@ -1,0 +1,25 @@
+body {
+  background-color: #777779;
+}
+
+.sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  color: #DEBE8E;
+}
+
+.sidebar-nav li a {
+  color: #1eeeb7;
+}
+
+.category-list a {
+  color: #FAA0B9;
+}
+
+.item-list a, .item-url, .content-url {
+  color: #FAA0B9;
+}

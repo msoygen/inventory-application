@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+  h1 #{category.name}
+  
+  div(style='margin-left:20px;margin-top:20px')
+
+    h4 İtems
+    
+    dl
+      each item in category_items
+        dt 
+          a(href=item.url class="item-url") #{item.name}
+        dd #{item.description}
+        dd Price: #{item.price}$
+        dd Number in stock: #{item.number_in_stock}
+
+      else
+        p This category has no items
+        
+    hr
+    p
+      a(href=category.url+'/delete' class="content-url") Delete category
+    p
+      a(href=category.url+'/update' class="content-url") Update category
